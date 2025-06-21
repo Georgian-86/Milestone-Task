@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "Mini-task-backend": {
+      "candid": "src/Mini-task-backend/Mini-task-backend.did",
+      "package": "Mini-task-backend",
+      "type": "rust"
+    },
+    "Mini-task-frontend": {
+      "dependencies": [
+        "Mini-task-backend"
+      ],
+      "source": [
+        "src/Mini-task-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Mini-task-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
